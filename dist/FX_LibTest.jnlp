@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="FX_LibTest.jnlp">
+  <information>
+    <title>FX_LibTest</title>
+    <vendor>Ferdinand</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="FX_LibTest.jar" size="24737" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\jfoenix-8.0.7.jar" size="2631271" download="eager" />
+    <jar href="lib\sqlitejdbc-v056.jar" size="2684154" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="FX_LibTest" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="library2.Main"  name="FX_LibTest" />
+  <update check="always"/>
+</jnlp>

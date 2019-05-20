@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="180.0" styleClass="toolbar" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SideViewController">
+   <children>
+      <Pane prefHeight="108.0" prefWidth="150.0">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="104.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Separator prefHeight="10.0" prefWidth="200.0" />
+      <JFXButton fx:id="btnDashboard" onAction="#OpenDashboard" prefHeight="47.0" prefWidth="187.0" styleClass="side-menu-button" text="    Dashboard" textAlignment="RIGHT">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" size="20" textAlignment="RIGHT" wrappingWidth="30.0" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnBooks" layoutX="10.0" layoutY="128.0" onAction="#OpenBooks" prefHeight="47.0" prefWidth="192.0" styleClass="side-menu-button" text="   Manage Books" textAlignment="RIGHT">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" size="20" textAlignment="RIGHT" wrappingWidth="30.0" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnMembers" layoutX="10.0" layoutY="128.0" onAction="#OpenMembers" prefHeight="47.0" prefWidth="188.0" styleClass="side-menu-button" text=" Manage Members" textAlignment="RIGHT">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" size="20" textAlignment="RIGHT" wrappingWidth="30.0" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Separator prefWidth="200.0" />
+      <JFXButton fx:id="btnLogout" layoutX="10.0" layoutY="363.0" onAction="#OpenLogout" prefHeight="47.0" prefWidth="189.0" styleClass="side-menu-button" text="            Logout" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnExit" layoutX="10.0" layoutY="413.0" onAction="#exit" prefHeight="47.0" prefWidth="192.0" styleClass="side-menu-button" text="            Exit" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</VBox>

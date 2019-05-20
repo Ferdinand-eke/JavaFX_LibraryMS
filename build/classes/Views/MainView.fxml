@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mainStackPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainViewController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1500.0">
+         <children>
+            <JFXToolbar fx:id="toolbar" layoutX="-4.0" layoutY="-3.0" minHeight="60.0" prefHeight="67.0" prefWidth="1500.0" styleClass="toolbar" stylesheets="@Styles.css">
+               <left>
+                  <JFXHamburger fx:id="hamburger" prefHeight="60.0" prefWidth="61.0" stylesheets="@Styles.css" BorderPane.alignment="CENTER">
+                     <opaqueInsets>
+                        <Insets left="20.0" />
+                     </opaqueInsets>
+                     <styleClass>
+                        <String fx:value="jfx-hamburger-Icon" />
+                        <String fx:value="jfx-hamburger" />
+                     </styleClass>
+                  </JFXHamburger>
+               </left>
+               <center>
+                  <Label text="UWADILIEKE LIBRARY ASSISTANT" textFill="#f5f3f3" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="59.0" />
+                     </font>
+                  </Label>
+               </center>
+            </JFXToolbar>
+            <AnchorPane fx:id="contentPane" layoutX="11.0" layoutY="70.0" prefHeight="665.0" prefWidth="1490.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+            <JFXDrawer fx:id="drawer" layoutX="-46.0" layoutY="71.0" minHeight="680.0" prefWidth="180.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
